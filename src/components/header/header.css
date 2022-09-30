@@ -1,3 +1,67 @@
+/* header styles */
+.header-info {
+    padding: 4px 0px;
+    background-color: var(--theme-light-black);
+}
+
+.fa,
+span {
+    color: var(--white);
+    font-size: var(--font-size-medium) !important;
+    font-weight: var(--font-weight-normal);
+    margin: 0px 5px;
+}
+
+.header {
+    background-color: var(--white);
+    border-bottom: var(--border-primary);
+}
+
+.brand {
+    display: flex;
+
+    align-items: center;
+
+
+}
+
+.logo {
+    margin: 0px;
+    color: var(--font-custom-color) !important;
+
+}
+
+
+.top-header {
+    padding: 16px 0px;
+}
+
+.bars-icon:hover {
+    opacity: 0.5;
+}
+
+
+.cart-icon {
+    position: relative;
+    line-height: 100%;
+}
+
+.cart-icon:hover {
+    opacity: 0.5;
+}
+
+.fa {
+    cursor: pointer;
+    color: var(--theme-dark-gray);
+    font-size: var(--font-size-x-huge) !important;
+}
+
+.header-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .title {
     color: #B1B3B5;
     font-size: 1.5rem;
@@ -47,5 +111,105 @@ span :nth-child(8) {
 
     50% {
         transform: translateY(-6px)
+    }
+}
+
+.navbar {
+    background-color: var(--white) !important;
+    justify-content: flex-end;
+    padding: 0;
+}
+
+.cart-icon,
+.bag-icon {
+    vertical-align: text-bottom;
+}
+
+
+.navbar-nav {
+    flex-direction: row;
+}
+
+.nav-link {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.nav-link:active {
+    color: var(--font-hover-color) !important;
+}
+
+a,
+span:hover {
+    color: var(--font-hover-color) !important;
+}
+
+.dropdown-toggle.nav-link {
+    text-transform: capitalize;
+}
+
+.dropdown-menu,
+.nav-brand-dropdown {
+    padding: 0;
+}
+
+.nav-item {
+    position: relative;
+}
+
+/* sm screen */
+@media (max-width: 576px) {
+    .fixed-mobile-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 998;
+    }
+
+    .brand {
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .col-no-padding {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .navbar {
+        padding-top: 0;
+        padding-bottom: 0.5rem;
+        justify-content: center;
+    }
+
+    .dropdown-menu,
+    .nav-brand-dropdown {
+        left: -30px;
+        min-width: 270px;
+    }
+
+    .nav-item {
+        margin-right: 15px;
+    }
+}
+
+
+/* md screen */
+@media (min-width: 768px) {
+    .logo {
+        margin-left: 15px;
+    }
+
+    .navbar-nav {
+        margin-left: 20px;
+    }
+
+
+    /* lg screen */
+    @media (min-width: 992px) {
+        .top-header {
+            padding: 22px ​0px;
+        }
     }
 }

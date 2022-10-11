@@ -1,5 +1,7 @@
 import React from "react";
 import "./header.css";
+import Select from "@material-ui/core/Select";
+import InputLabel from "@material-ui/core/InputLabel";
 import { BarsIcon } from "../../assets/Icon";
 import CartIcon from "../../assets/CartIcon";
 import { useDispatch } from "react-redux";
@@ -8,33 +10,27 @@ import {
   Col,
   Container,
   Form,
+  FormControl,
   Nav,
   Navbar,
   NavItem,
   Row,
 } from "react-bootstrap";
 import { setShowSideMenu } from "../../pages/system-state/systemSlice";
-import {
-  NavLink,
-  UncontrolledDropdown,
-  Dropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-} from "reactstrap";
 
 export const Header = () => {
   const dispatch = useDispatch();
   const handleShow = () => dispatch(setShowSideMenu(true));
 
   return (
+    // header
     <header className="header fixed-mobile-header">
       <div className="header-info">
         <Container>
           <Row>
             {/* free shipping */}
-            <Col md="4" className="text-center d-none d-md-block">
-              <i className="fa fa-truck"></i>
+            <Col md="4" className="d-none d-md-block">
+              <i class="fa-solid fa-truck"></i>
               {"  "}
               <span>Free Shipping over $99</span>
             </Col>
@@ -45,146 +41,88 @@ export const Header = () => {
               <span>100% Payment Secure</span>
             </Col>
             {/* customer support */}
-            <Col md="4" className="text-center d-none d-md-block">
-              <i className="fa fa-phone" />
+            <Col md="4" className="text-end d-none d-md-block">
+              <i class="fa-solid fa-phone"></i>
               {"  "}
               <span>Call us +0123 456 789</span>
             </Col>
             <Col xs="12" className="text-center d-block d-md-none">
-              <i className="fa fa-phone" />
+              <i class="fa-solid fa-phone"></i>
               {"  "}
-              <span> Need advice? Call us +0123 456 789</span>
+              <span> Need advice&#63; Call us +0123 456 789</span>
             </Col>
           </Row>
         </Container>
       </div>
-      <Container>
-        <Row className="align-items-center top-header">
-          <Col
-            xs={{ size: 12, order: 1 }}
-            sm={{ size: 12, order: 1 }}
-            md={{ size: 3, order: 1 }}
-            lg={{ size: 3, order: 1 }}
-            className="pr-0"
-          >
-            <div className="brand">
-              <i className="fa-solid fa-bars" onClick={handleShow}></i>
-              <Navbar.Brand href="/" className="title">
-                <span className="text-danger">F</span>
-                <span className="text-danger">A</span>
-                <span className="text-danger">S</span>
-                <span className="text-danger">H</span>
-                <span className="text-danger">I</span>
-                <span className="text-danger">O</span>
-                <span className="text-danger">N</span>
-                <span className="text-danger">A</span>
-              </Navbar.Brand>
-            </div>
-          </Col>
-          <Col
-            xs={{ size: 12, order: 4 }}
-            sm={{ size: 12, order: 4 }}
-            md={{ size: 12, order: 4 }}
-            lg={{ size: 5, order: 2 }}
-            className="pt-2 pt-lg-0"
-          >
-            <div className="">
-              <Form className="">
-                <Form.Control
-                  type="search"
-                  placeholder="Search"
-                  className="me-2"
-                  aria-label="Search"
-                />
-                <Button variant="outline-success">Search</Button>
-              </Form>
-            </div>
-          </Col>
-          <Col
-            xs={{ size: 12, order: 2 }}
-            sm={{ size: 12, order: 2 }}
-            md={{ size: 4, order: 1 }}
-            lg={{ size: 5, order: 3 }}
-            className="desktop-hidden"
-          >
-            <div className="header-links">
-              <Button
-                borderless
-                variant="empty"
-                ariaLabel="open the menu"
-                icon={<BarsIcon />}
-                onClick={() => console.log("open the menu")}
-              />
-              <CartIcon
-                cartItems={2}
-                onClick={() => console.log("open the cart")}
-              />
-            </div>
-          </Col>
-          <Col
-            xs={{ size: 12, order: 2 }}
-            sm={{ size: 12, order: 2 }}
-            md={{ size: 9, order: 1 }}
-            lg={{ size: 4, order: 3 }}
-            // className='px-0'
-          >
-            <Navbar color="light" light expand="md" className="mt-1 mt-md-0">
-              <CartIcon
-                className="d-none d-md-block"
-                cartItems={3}
-                onClick={() => console.log("cart clicked")}
-              />
-              <Nav navbar>
-                <Dropdown nav inNavbar>
-                  <DropdownToggle nav>
-                    Brands
-                    <span className="fa fa-chevron-down dropdown-caret"></span>
-                  </DropdownToggle>
-                  <DropdownMenu right className="nav-brand-dropdown">
-                    <div className="mini-brand"></div>
-                  </DropdownMenu>
-                </Dropdown>
 
-                <NavItem>
-                  <NavLink to="/shop" activeClassName="active">
-                    Shop
-                  </NavLink>
-                </NavItem>
+      {/* navbar */}
+      <Navbar className="navbar" expand="lg">
+        <div className="container">
+          {/* <i class="material-icons menu-icon">menu</i> */}
 
-                <UncontrolledDropdown nav inNavbar>
-                  <DropdownToggle nav>
-                    Welcome
-                    <span className="fa fa-chevron-down dropdown-caret"></span>
-                  </DropdownToggle>
-                  <DropdownMenu right>
-                    <DropdownItem onClick={() => console.log("login clicked")}>
-                      Dashboard
-                    </DropdownItem>
-                    <DropdownItem onClick={() => console.log("login clicked")}>
-                      Sign Out
-                    </DropdownItem>
-                  </DropdownMenu>
-                </UncontrolledDropdown>
+          {/* LOGO */}
+          <div className="logo ">
+            <i className="fa-solid fa-bars" onClick={handleShow}></i>
+            {/* <img src="images/logo.png" alt="logo" /> */}
+            <div className="text title">
+              <span className="">E</span>
+              <span className="">V</span>
+              <span className="">E</span>
+              <span className="">R</span>
+              <span className="">E</span>
+              <span className="">S</span>
+              <span className="">T</span>
+              <span className="">.</span>
+              <span className="">s</span>
+              <span className="">h</span>
+              <span className="">o</span>
+              <span className="">p</span>
+            </div>
+          </div>
 
-                <UncontrolledDropdown nav inNavbar>
-                  <DropdownToggle nav>
-                    Welcome!
-                    <span className="fa fa-chevron-down dropdown-caret"></span>
-                  </DropdownToggle>
-                  <DropdownMenu right>
-                    <DropdownItem onClick={() => console.log("login clicked")}>
-                      Login
-                    </DropdownItem>
-                    <DropdownItem onClick={() => console.log("login clicked")}>
-                      Sign Up
-                    </DropdownItem>
-                  </DropdownMenu>
-                </UncontrolledDropdown>
-              </Nav>
-            </Navbar>
-          </Col>
-        </Row>
-      </Container>
+          <Navbar.Toggle aria-controls="basic-navbar-nav">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </Navbar.Toggle>
+          <Navbar.Collapse id="basic-navbar-nav">
+            {/* SEARCH MID */}
+            <div className="item search right" tabIndex="0">
+              <div className="search-group">
+                <select>
+                  <option value="all">All</option>
+                  <option value="all">MENS</option>
+                  <option value="all">WOMENS</option>
+                  <option value="all">KIDS</option>
+                  <option value="all">SEASONAL</option>
+                </select>
+                <input type="text" placeholder="Search" />
+                {/* search icon */}
+                <i className="fa-solid fa-search"></i>
+              </div>
+            </div>
+
+            {/* RIGHT END Account */}
+            <a href="#" className="item">
+              <div className="group">
+                <i className="fa-solid fa-user"></i>
+                <div className="detail">
+                  Account
+                  <div className="sub">Sign In</div>
+                </div>
+              </div>
+            </a>
+            {/* RIGHT END CART */}
+            <a href="#" className="item">
+              <div className="group">
+                <i className="fa-solid fa-shopping-cart"></i>
+                <div className="detail">
+                  Cart
+                  <div className="sub">0 items</div>
+                </div>
+              </div>
+            </a>
+          </Navbar.Collapse>
+        </div>
+      </Navbar>
     </header>
   );
 };

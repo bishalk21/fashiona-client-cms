@@ -1,0 +1,50 @@
+footer {
+    position: relative;
+    top: 15em;
+    color: #565656;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+footer .container .col-sm-4 ul li a {
+    color: #565656;
+}
+
+footer .container .col-sm-4 ul li a:hover {
+    text-decoration: none;
+}
+
+footer .container-fluid span {
+    font-size: 30px;
+    position: absolute;
+    top: 25%;
+    left: 12%;
+}
+
+footer .container-fluid h3 {
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+footer .contact button {
+    background-color: #565656;
+    color: #fff;
+}
+
+@media (min-width:863px) {
+    footer .container-fluid span {
+        font-size: 40px;
+        position: absolute;
+        top: 10%;
+
+    }
+
+    footer .container-fluid h3 {
+        font-size: 1.9rem;
+
+        width: 70%;
+        position: relative;
+        left: 15%;
+top: -10px;
+}
+}

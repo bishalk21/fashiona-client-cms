@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import Button from "react-bootstrap/Button";
+import React from "react";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { useDispatch, useSelector } from "react-redux";
 import { setShowSideMenu } from "../../pages/system-state/systemSlice";
@@ -9,7 +8,6 @@ export const SideMenu = () => {
 
   const { showSideMenu } = useSelector((state) => state.system);
   const handleClose = () => dispatch(setShowSideMenu(false));
-  const handleShow = () => dispatch(setShowSideMenu(true));
 
   return (
     <>

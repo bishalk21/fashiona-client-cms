@@ -3,9 +3,5 @@ import { MainLayout } from "../../components/layout/MainLayout";
 import Slider from "../../components/slider/Slider";
 
 export const HomeP = () => {
-  return (
-    <MainLayout>
-      <Slider />
-    </MainLayout>
-  );
+  return <MainLayout>{/* <Slider /> */}</MainLayout>;
 };

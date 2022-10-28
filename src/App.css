@@ -118,17 +118,17 @@
     --layout-transition-speed: 0.3s default;
     --layout-transition-higher-speed: 0.6s default;
 
-    /* icons 
-    --twitter: url('./assets/img/social-icons/twitter.svg');
-    --pinterest: url('./assets/img/social-icons/pinterest.svg');
-    --instagram: url('./assets/img/social-icons/instagram.svg');
-    --facebook: url('./assets/img/social-icons/facebook.svg');
+    /* icons  */
+    --twitter: url('./assets/social-icons/twitter.svg');
+    --pinterest: url('./assets/social-icons/pinterest.svg');
+    --instagram: url('./assets/social-icons/instagram.svg');
+    --facebook: url('./assets/social-icons/facebook.svg');
 
     --bars: url('./assets/img/bars.png');
     --chevron-down: url('./assets/img/chevron-down.svg');
     --close: url('./assets/img/close.svg');
     --bag: url('./assets/img/bag.svg');
-    */
+
 }
 
 *,

@@ -1,175 +1,92 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { Container } from "react-bootstrap";
+
 import "./footer.css";
 
 export const Footer = () => {
+  const infoLinks = [
+    { id: 0, name: "Contact Us", to: "/contact" },
+    { id: 1, name: "Sell With Us", to: "/sell" },
+    { id: 2, name: "Shipping", to: "/shipping" },
+  ];
+  const footerBusinessLinks = (
+    <ul className="support-links">
+      <li className="footer-link">
+        <Link to="/dashboard">Account Details</Link>
+      </li>
+      <li className="footer-link">
+        <Link to="/dashboard/orders">Orders</Link>
+      </li>
+    </ul>
+  );
+
+  const footerLinks = infoLinks.map((item) => (
+    <li key={item.id} className="footer-link">
+      <Link key={item.id} to={item.to}>
+        {item.name}
+      </Link>
+    </li>
+  ));
+
   return (
-    <>
-      {/* <!-- FOOTER --> */}
-
-      <footer className="page-footer container-fluid col-sm-12">
-        <hr />
-        <div className="container">
-          <div className="col-sm-4">
-            <h4>Help</h4>
-            <ul className="list-unstyled quick-links">
-              <li>
-                <a href="">Payments</a>
-              </li>
-
-              <li>
-                <a href="">Shipping</a>
-              </li>
-
-              <li>
-                <a href="">Cancellations & Return</a>
-              </li>
-
-              <li>
-                <a href="">FAQ</a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="col-sm-4">
-            <h4>Lifestyle Store</h4>
-            <ul className="list-unstyled quick-links">
-              <li>
-                <a href="">Contact Us</a>
-              </li>
-
-              <li>
-                <a href="">About Us</a>
-              </li>
-              <li>
-                <a href="">Careers</a>
-              </li>
-              <li>
-                <a href="">Stories</a>
-              </li>
-              <li>
-                <a href="">Sell With Us</a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="col-sm-4">
-            <h4>MISC</h4>
-            <ul className="list-unstyled quick-links">
-              <li>
-                <a href="">Online Shopping</a>
-              </li>
-              <li>
-                <a href="">Gift Card</a>
-              </li>
-              <li>
-                <a href=""></a>
-              </li>
-              Sitemap
-            </ul>
-          </div>
-        </div>
-
-        <div className="container-fluid col-lg-10 col-lg-offset-1">
-          <div className="row">
-            <hr />
-            <div className="col-sm-4">
-              <span className="glyphicon glyphicon-map-marker"></span>
-              <h3 className="text-center">&nbsp;TRACK YOUR ORDER</h3>
+    <footer className="footer">
+      <Container>
+        <div className="footer-content">
+          <div className="footer-block">
+            <div className="block-title">
+              <h3 className="text-uppercase">Customer Service</h3>
             </div>
-
-            <div className="col-sm-4">
-              <span className="glyphicon glyphicon-refresh"></span>
-              <h3 className="text-center">&nbsp;&nbsp;FREE & EASY RETURNS</h3>
+            <div className="block-content">
+              <ul>{footerLinks}</ul>
             </div>
-
-            <div className="col-sm-4">
-              <span className="glyphicon glyphicon-remove-circle"></span>
-              <h3 className="text-center">ONLINE CANCELLATIONS</h3>
+          </div>
+          <div className="footer-block">
+            <div className="block-title">
+              <h3 className="text-uppercase">Links</h3>
+            </div>
+            <div className="block-content">
+              <ul>{footerLinks}</ul>
+            </div>
+          </div>
+          <div className="footer-block">
+            <div className="block-title">
+              <h3 className="text-uppercase">Newsletter</h3>
+              <footerBusinessLinks />
+              {/* <Newsletter /> */}
             </div>
           </div>
         </div>
-        <br />
-        {/* <!--/div> */}
-
-        <div
-          className="container-fluid"
-          style={{ position: "relative", top: "6em", marginBottom: "20px" }}
-        >
-          <div className="col-sm-5">
-            <h5 style={{ fontSize: "0.95em" }}>
-              Policies:{" "}
-              <a href="" style={{ textDecoration: "none" }}>
-                {" "}
-                Return Policy{" "}
-              </a>
-              |
-              <a href="" style={{ textDecoration: "none" }}>
-                {" "}
-                Terms of use{" "}
-              </a>
-              |
-              <a href="" style={{ textDecoration: "none" }}>
-                {" "}
-                Security{" "}
-              </a>
-              |
-              <a href="" style={{ textDecoration: "none" }}>
-                {" "}
-                Privacy{" "}
-              </a>
-              |
-              <a href="" style={{ textDecoration: "none" }}>
-                {" "}
-                Infringement
-              </a>
-            </h5>
-          </div>
-
-          <div className="col-sm-3">
-            <h5 style={{ fontSize: "0.95em" }}>
-              {" "}
-              &copy; {new Date().getFullYear()} EVEREST.shop - All rights
-              reserved
-            </h5>
-          </div>
-
-          <div className="col-sm-4 row contact">
-            <h5 className="col-sm-5" style={{ fontSize: "0.95em" }}>
-              Keep in touch
-            </h5>
-            <div className="col-sm-7">
-              <button
-                className="btn btn-default"
-                style={{ borderRadius: "50%", width: "40px", height: "40px" }}
-              >
-                <i className="fa fa-facebook-f"></i>
-              </button>
-
-              <button
-                className="btn btn-default"
-                style={{ borderRadius: "50%", width: "40px", height: "40px" }}
-              >
-                <i className="fa fa-twitter"></i>
-              </button>
-
-              <button
-                className="btn btn-default"
-                style={{ borderRadius: "50%", width: "40px", height: "40px" }}
-              >
-                <i className="fa fa-google"></i>
-              </button>
-
-              <button
-                className="btn btn-default"
-                style={{ borderRadius: "50%", width: "40px", height: "40px" }}
-              >
-                <i className="fa fa-youtube"></i>
-              </button>
-            </div>
-          </div>
+        <div className="footer-copyright">
+          <span>
+            {" "}
+            &copy;
+            {new Date().getFullYear()} E-shop Babbal
+          </span>
         </div>
-        <hr />
-      </footer>
-    </>
+        <ul className="footer-social-item">
+          <li>
+            <a href="/#facebook" rel="noreferrer noopener" target="_blank">
+              <i className="fab fa-facebook-f" />
+            </a>
+          </li>
+          <li>
+            <a href="/#instagram" rel="noreferrer noopener" target="_blank">
+              <i className="fab fa-instagram" />
+            </a>
+          </li>
+          <li>
+            <a href="/#pinterest" rel="noreferrer noopener" target="_blank">
+              <i className="fab fa-pinterest-p" />
+            </a>
+          </li>
+          <li>
+            <a href="/#twitter" rel="noreferrer noopener" target="_blank">
+              <i className="fab fa-twitter" />
+            </a>
+          </li>
+        </ul>
+      </Container>
+    </footer>
   );
 };

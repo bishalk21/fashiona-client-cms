@@ -115,9 +115,10 @@ export const Header = () => {
       <nav className="category">
         <div className="nav__elements">
           <ul className="nav__groups">
+            {/* Clothing */}
             <li className="nav__group">
               <a href="/" className="nav__group__link">
-                Furniture
+                Clothings
               </a>
               <ul className="nav__group__dropdown">
                 <div className="multi-column">
@@ -254,9 +255,11 @@ export const Header = () => {
                 </div>
               </ul>
             </li>
+
+            {/* Cosmetics */}
             <li className="nav__group">
               <a href="/" className="nav__group__link">
-                Deco
+                Cosmetics
               </a>
               <ul className="nav__group__dropdown">
                 <div className="multi-column">
@@ -373,9 +376,11 @@ export const Header = () => {
                 </div>
               </ul>
             </li>
+
+            {/* Furnitures */}
             <li className="nav__group">
               <a href="/" className="nav__group__link">
-                Mens
+                Furnitures
               </a>
               <ul className="nav__group__dropdown">
                 <div className="multi-column">
@@ -488,9 +493,11 @@ export const Header = () => {
                 </div>
               </ul>
             </li>
+
+            {/* Exercises/Fitness */}
             <li className="nav__group">
               <a href="/" className="nav__group__link">
-                Furniture
+                Fitness Health
               </a>
               <ul className="nav__group__dropdown">
                 <div className="multi-column">
@@ -627,9 +634,11 @@ export const Header = () => {
                 </div>
               </ul>
             </li>
+
+            {/* Books */}
             <li className="nav__group">
               <a href="/" className="nav__group__link">
-                Furniture
+                Books Library
               </a>
               <ul className="nav__group__dropdown">
                 <div className="multi-column">
@@ -766,10 +775,983 @@ export const Header = () => {
                 </div>
               </ul>
             </li>
+
+            {/* Pets */}
             <li className="nav__group">
-              <a href="/" className="nav__group__link">
-                Furniture
-              </a>
+              <a className="nav__group__link">Pets</a>
+              <ul className="nav__group__dropdown">
+                <div className="multi-column">
+                  <ul className="product-list multi" data-type="table">
+                    <li className="product-list__title title">To Work On</li>
+                    <li className="product-list__link">
+                      <a href="/">Writing desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Hipster desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Corner desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Floating desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Executive desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Gaming desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Console tables</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Standing desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Laptop stands</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Accent tables</a>
+                    </li>
+                  </ul>
+                  <ul className="product-list multi" data-type="chair">
+                    <li className="product-list__title title">To Sit On</li>
+                    <li className="product-list__link">
+                      <a href="/">Ergonomic chairs</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Swivel chairs</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Armchairs</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Kneeling chairs</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Chaise lounges</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Fabric sofas</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Sofa beds</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Bouncing balls</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Beanbags</a>
+                    </li>
+                  </ul>
+                  <ul className="product-list multi" data-type="support">
+                    <li className="product-list__title title">
+                      Physical (& Emotional) Support
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Footstools</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Ottomans</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Coffee tables</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Shelving Units</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Bookcases</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Pool tables</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Mini bars</a>
+                    </li>
+                  </ul>
+                  <div className="article-list">
+                    <ul>
+                      <li className="article-list__title title">
+                        For Your Inspiration
+                      </li>
+                      <li className="article-list__link">
+                        <a href="/">
+                          Are You Really A Millenial If You't Shop At Ikea?
+                        </a>
+                      </li>
+                      <li className="article-list__link">
+                        <a href="/">
+                          The Latest Trend: Purchasing Tables from Hipster Cafes
+                        </a>
+                      </li>
+                      <li className="article-list__link">
+                        <a href="/">
+                          15 Uncomfortable but Instagram-Worthy Chairs For Your
+                          Home Office
+                        </a>
+                      </li>
+                    </ul>
+                    <img
+                      alt=""
+                      className="product-image"
+                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/nav-table.jpg"
+                      data-match="table"
+                    />
+                    <img
+                      alt=""
+                      className="product-image"
+                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/nav-chair.jpg"
+                      data-match="chair"
+                    />
+                    <img
+                      alt=""
+                      className="product-image"
+                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/nav-support.jpg"
+                      data-match="support"
+                    />
+                  </div>
+                </div>
+              </ul>
+            </li>
+
+            {/* Offices */}
+            <li className="nav__group">
+              <a className="nav__group__link">Office Supplies</a>
+              <ul className="nav__group__dropdown">
+                <div className="multi-column">
+                  <ul className="product-list multi" data-type="table">
+                    <li className="product-list__title title">To Work On</li>
+                    <li className="product-list__link">
+                      <a href="/">Writing desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Hipster desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Corner desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Floating desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Executive desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Gaming desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Console tables</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Standing desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Laptop stands</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Accent tables</a>
+                    </li>
+                  </ul>
+                  <ul className="product-list multi" data-type="chair">
+                    <li className="product-list__title title">To Sit On</li>
+                    <li className="product-list__link">
+                      <a href="/">Ergonomic chairs</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Swivel chairs</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Armchairs</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Kneeling chairs</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Chaise lounges</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Fabric sofas</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Sofa beds</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Bouncing balls</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Beanbags</a>
+                    </li>
+                  </ul>
+                  <ul className="product-list multi" data-type="support">
+                    <li className="product-list__title title">
+                      Physical (& Emotional) Support
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Footstools</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Ottomans</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Coffee tables</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Shelving Units</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Bookcases</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Pool tables</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Mini bars</a>
+                    </li>
+                  </ul>
+                  <div className="article-list">
+                    <ul>
+                      <li className="article-list__title title">
+                        For Your Inspiration
+                      </li>
+                      <li className="article-list__link">
+                        <a href="/">
+                          Are You Really A Millenial If You't Shop At Ikea?
+                        </a>
+                      </li>
+                      <li className="article-list__link">
+                        <a href="/">
+                          The Latest Trend: Purchasing Tables from Hipster Cafes
+                        </a>
+                      </li>
+                      <li className="article-list__link">
+                        <a href="/">
+                          15 Uncomfortable but Instagram-Worthy Chairs For Your
+                          Home Office
+                        </a>
+                      </li>
+                    </ul>
+                    <img
+                      alt=""
+                      className="product-image"
+                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/nav-table.jpg"
+                      data-match="table"
+                    />
+                    <img
+                      alt=""
+                      className="product-image"
+                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/nav-chair.jpg"
+                      data-match="chair"
+                    />
+                    <img
+                      alt=""
+                      className="product-image"
+                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/nav-support.jpg"
+                      data-match="support"
+                    />
+                  </div>
+                </div>
+              </ul>
+            </li>
+
+            {/* Automotive */}
+            <li className="nav__group">
+              <a className="nav__group__link">Automotive Accessories</a>
+              <ul className="nav__group__dropdown">
+                <div className="multi-column">
+                  <ul className="product-list multi" data-type="table">
+                    <li className="product-list__title title">To Work On</li>
+                    <li className="product-list__link">
+                      <a href="/">Writing desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Hipster desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Corner desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Floating desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Executive desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Gaming desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Console tables</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Standing desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Laptop stands</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Accent tables</a>
+                    </li>
+                  </ul>
+                  <ul className="product-list multi" data-type="chair">
+                    <li className="product-list__title title">To Sit On</li>
+                    <li className="product-list__link">
+                      <a href="/">Ergonomic chairs</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Swivel chairs</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Armchairs</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Kneeling chairs</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Chaise lounges</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Fabric sofas</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Sofa beds</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Bouncing balls</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Beanbags</a>
+                    </li>
+                  </ul>
+                  <ul className="product-list multi" data-type="support">
+                    <li className="product-list__title title">
+                      Physical (& Emotional) Support
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Footstools</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Ottomans</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Coffee tables</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Shelving Units</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Bookcases</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Pool tables</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Mini bars</a>
+                    </li>
+                  </ul>
+                  <div className="article-list">
+                    <ul>
+                      <li className="article-list__title title">
+                        For Your Inspiration
+                      </li>
+                      <li className="article-list__link">
+                        <a href="/">
+                          Are You Really A Millenial If You't Shop At Ikea?
+                        </a>
+                      </li>
+                      <li className="article-list__link">
+                        <a href="/">
+                          The Latest Trend: Purchasing Tables from Hipster Cafes
+                        </a>
+                      </li>
+                      <li className="article-list__link">
+                        <a href="/">
+                          15 Uncomfortable but Instagram-Worthy Chairs For Your
+                          Home Office
+                        </a>
+                      </li>
+                    </ul>
+                    <img
+                      alt=""
+                      className="product-image"
+                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/nav-table.jpg"
+                      data-match="table"
+                    />
+                    <img
+                      alt=""
+                      className="product-image"
+                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/nav-chair.jpg"
+                      data-match="chair"
+                    />
+                    <img
+                      alt=""
+                      className="product-image"
+                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/nav-support.jpg"
+                      data-match="support"
+                    />
+                  </div>
+                </div>
+              </ul>
+            </li>
+
+            {/* Electronics */}
+            <li className="nav__group">
+              <a className="nav__group__link">Electronics</a>
+              <ul className="nav__group__dropdown">
+                <div className="multi-column">
+                  <ul className="product-list multi" data-type="table">
+                    <li className="product-list__title title">To Work On</li>
+                    <li className="product-list__link">
+                      <a href="/">Writing desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Hipster desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Corner desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Floating desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Executive desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Gaming desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Console tables</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Standing desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Laptop stands</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Accent tables</a>
+                    </li>
+                  </ul>
+                  <ul className="product-list multi" data-type="chair">
+                    <li className="product-list__title title">To Sit On</li>
+                    <li className="product-list__link">
+                      <a href="/">Ergonomic chairs</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Swivel chairs</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Armchairs</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Kneeling chairs</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Chaise lounges</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Fabric sofas</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Sofa beds</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Bouncing balls</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Beanbags</a>
+                    </li>
+                  </ul>
+                  <ul className="product-list multi" data-type="support">
+                    <li className="product-list__title title">
+                      Physical (& Emotional) Support
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Footstools</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Ottomans</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Coffee tables</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Shelving Units</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Bookcases</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Pool tables</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Mini bars</a>
+                    </li>
+                  </ul>
+                  <div className="article-list">
+                    <ul>
+                      <li className="article-list__title title">
+                        For Your Inspiration
+                      </li>
+                      <li className="article-list__link">
+                        <a href="/">
+                          Are You Really A Millenial If You't Shop At Ikea?
+                        </a>
+                      </li>
+                      <li className="article-list__link">
+                        <a href="/">
+                          The Latest Trend: Purchasing Tables from Hipster Cafes
+                        </a>
+                      </li>
+                      <li className="article-list__link">
+                        <a href="/">
+                          15 Uncomfortable but Instagram-Worthy Chairs For Your
+                          Home Office
+                        </a>
+                      </li>
+                    </ul>
+                    <img
+                      alt=""
+                      className="product-image"
+                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/nav-table.jpg"
+                      data-match="table"
+                    />
+                    <img
+                      alt=""
+                      className="product-image"
+                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/nav-chair.jpg"
+                      data-match="chair"
+                    />
+                    <img
+                      alt=""
+                      className="product-image"
+                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/nav-support.jpg"
+                      data-match="support"
+                    />
+                  </div>
+                </div>
+              </ul>
+            </li>
+
+            {/* Beverages */}
+            <li className="nav__group">
+              <a className="nav__group__link">Beverages</a>
+              <ul className="nav__group__dropdown">
+                <div className="multi-column">
+                  <ul className="product-list multi" data-type="table">
+                    <li className="product-list__title title">To Work On</li>
+                    <li className="product-list__link">
+                      <a href="/">Writing desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Hipster desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Corner desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Floating desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Executive desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Gaming desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Console tables</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Standing desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Laptop stands</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Accent tables</a>
+                    </li>
+                  </ul>
+                  <ul className="product-list multi" data-type="chair">
+                    <li className="product-list__title title">To Sit On</li>
+                    <li className="product-list__link">
+                      <a href="/">Ergonomic chairs</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Swivel chairs</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Armchairs</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Kneeling chairs</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Chaise lounges</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Fabric sofas</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Sofa beds</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Bouncing balls</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Beanbags</a>
+                    </li>
+                  </ul>
+                  <ul className="product-list multi" data-type="support">
+                    <li className="product-list__title title">
+                      Physical (& Emotional) Support
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Footstools</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Ottomans</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Coffee tables</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Shelving Units</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Bookcases</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Pool tables</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Mini bars</a>
+                    </li>
+                  </ul>
+                  <div className="article-list">
+                    <ul>
+                      <li className="article-list__title title">
+                        For Your Inspiration
+                      </li>
+                      <li className="article-list__link">
+                        <a href="/">
+                          Are You Really A Millenial If You't Shop At Ikea?
+                        </a>
+                      </li>
+                      <li className="article-list__link">
+                        <a href="/">
+                          The Latest Trend: Purchasing Tables from Hipster Cafes
+                        </a>
+                      </li>
+                      <li className="article-list__link">
+                        <a href="/">
+                          15 Uncomfortable but Instagram-Worthy Chairs For Your
+                          Home Office
+                        </a>
+                      </li>
+                    </ul>
+                    <img
+                      alt=""
+                      className="product-image"
+                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/nav-table.jpg"
+                      data-match="table"
+                    />
+                    <img
+                      alt=""
+                      className="product-image"
+                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/nav-chair.jpg"
+                      data-match="chair"
+                    />
+                    <img
+                      alt=""
+                      className="product-image"
+                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/nav-support.jpg"
+                      data-match="support"
+                    />
+                  </div>
+                </div>
+              </ul>
+            </li>
+
+            {/* Arts and Crafts */}
+            <li className="nav__group">
+              <a className="nav__group__link">Arts & Crafts</a>
+              <ul className="nav__group__dropdown">
+                <div className="multi-column">
+                  <ul className="product-list multi" data-type="table">
+                    <li className="product-list__title title">To Work On</li>
+                    <li className="product-list__link">
+                      <a href="/">Writing desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Hipster desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Corner desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Floating desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Executive desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Gaming desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Console tables</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Standing desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Laptop stands</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Accent tables</a>
+                    </li>
+                  </ul>
+                  <ul className="product-list multi" data-type="chair">
+                    <li className="product-list__title title">To Sit On</li>
+                    <li className="product-list__link">
+                      <a href="/">Ergonomic chairs</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Swivel chairs</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Armchairs</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Kneeling chairs</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Chaise lounges</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Fabric sofas</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Sofa beds</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Bouncing balls</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Beanbags</a>
+                    </li>
+                  </ul>
+                  <ul className="product-list multi" data-type="support">
+                    <li className="product-list__title title">
+                      Physical (& Emotional) Support
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Footstools</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Ottomans</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Coffee tables</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Shelving Units</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Bookcases</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Pool tables</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Mini bars</a>
+                    </li>
+                  </ul>
+                  <div className="article-list">
+                    <ul>
+                      <li className="article-list__title title">
+                        For Your Inspiration
+                      </li>
+                      <li className="article-list__link">
+                        <a href="/">
+                          Are You Really A Millenial If You't Shop At Ikea?
+                        </a>
+                      </li>
+                      <li className="article-list__link">
+                        <a href="/">
+                          The Latest Trend: Purchasing Tables from Hipster Cafes
+                        </a>
+                      </li>
+                      <li className="article-list__link">
+                        <a href="/">
+                          15 Uncomfortable but Instagram-Worthy Chairs For Your
+                          Home Office
+                        </a>
+                      </li>
+                    </ul>
+                    <img
+                      alt=""
+                      className="product-image"
+                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/nav-table.jpg"
+                      data-match="table"
+                    />
+                    <img
+                      alt=""
+                      className="product-image"
+                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/nav-chair.jpg"
+                      data-match="chair"
+                    />
+                    <img
+                      alt=""
+                      className="product-image"
+                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/nav-support.jpg"
+                      data-match="support"
+                    />
+                  </div>
+                </div>
+              </ul>
+            </li>
+
+            {/* Toys and Games */}
+            <li className="nav__group">
+              <a className="nav__group__link">Toys & Games</a>
+              <ul className="nav__group__dropdown">
+                <div className="multi-column">
+                  <ul className="product-list multi" data-type="table">
+                    <li className="product-list__title title">To Work On</li>
+                    <li className="product-list__link">
+                      <a href="/">Writing desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Hipster desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Corner desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Floating desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Executive desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Gaming desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Console tables</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Standing desks</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Laptop stands</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Accent tables</a>
+                    </li>
+                  </ul>
+                  <ul className="product-list multi" data-type="chair">
+                    <li className="product-list__title title">To Sit On</li>
+                    <li className="product-list__link">
+                      <a href="/">Ergonomic chairs</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Swivel chairs</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Armchairs</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Kneeling chairs</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Chaise lounges</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Fabric sofas</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Sofa beds</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Bouncing balls</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Beanbags</a>
+                    </li>
+                  </ul>
+                  <ul className="product-list multi" data-type="support">
+                    <li className="product-list__title title">
+                      Physical (& Emotional) Support
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Footstools</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Ottomans</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Coffee tables</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Shelving Units</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Bookcases</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Pool tables</a>
+                    </li>
+                    <li className="product-list__link">
+                      <a href="/">Mini bars</a>
+                    </li>
+                  </ul>
+                  <div className="article-list">
+                    <ul>
+                      <li className="article-list__title title">
+                        For Your Inspiration
+                      </li>
+                      <li className="article-list__link">
+                        <a href="/">
+                          Are You Really A Millenial If You't Shop At Ikea?
+                        </a>
+                      </li>
+                      <li className="article-list__link">
+                        <a href="/">
+                          The Latest Trend: Purchasing Tables from Hipster Cafes
+                        </a>
+                      </li>
+                      <li className="article-list__link">
+                        <a href="/">
+                          15 Uncomfortable but Instagram-Worthy Chairs For Your
+                          Home Office
+                        </a>
+                      </li>
+                    </ul>
+                    <img
+                      alt=""
+                      className="product-image"
+                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/nav-table.jpg"
+                      data-match="table"
+                    />
+                    <img
+                      alt=""
+                      className="product-image"
+                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/nav-chair.jpg"
+                      data-match="chair"
+                    />
+                    <img
+                      alt=""
+                      className="product-image"
+                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/nav-support.jpg"
+                      data-match="support"
+                    />
+                  </div>
+                </div>
+              </ul>
+            </li>
+
+            {/* Medicines */}
+            <li className="nav__group">
+              <a className="nav__group__link">Medicines</a>
               <ul className="nav__group__dropdown">
                 <div className="multi-column">
                   <ul className="product-list multi" data-type="table">

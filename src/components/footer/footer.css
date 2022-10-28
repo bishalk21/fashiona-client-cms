@@ -1,50 +1,102 @@
-footer {
-    position: relative;
-    top: 15em;
-    color: #565656;
+.footer {
+    flex-shrink: 0;
+    border-top: var(--border-default);
+    /* list-style: none; */
+}
+
+.footer-content {
+    display: flex;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+.footer-block {
     width: 100%;
-    margin-bottom: 10px;
+    margin-right: 16px;
+    border-right: var(--border-primary);
+    padding-top: 20px;
 }
 
-footer .container .col-sm-4 ul li a {
-    color: #565656;
+.footer-block:last-child {
+    margin-right: 0;
 }
 
-footer .container .col-sm-4 ul li a:hover {
-    text-decoration: none;
+/*
+ * Social Icons
+ */
+
+.footer-social-item {
+    text-align: center;
 }
 
-footer .container-fluid span {
-    font-size: 30px;
-    position: absolute;
-    top: 25%;
-    left: 12%;
+.footer-social-item span,
+a {
+    display: inline-block;
+    vertical-align: top;
 }
 
-footer .container-fluid h3 {
-    font-size: 20px;
-    margin-left: 30px;
+.footer-social-item span,
+a :hover {
+    opacity: 0.8;
 }
 
-footer .contact button {
-    background-color: #565656;
-    color: #fff;
+.footer-social-item li {
+    padding-bottom: 8px;
+    margin: 0 auto;
+    display: inline-block;
 }
 
-@media (min-width:863px) {
-    footer .container-fluid span {
-        font-size: 40px;
-        position: absolute;
-        top: 10%;
+.footer-social-item li a {
+    margin-left: 10px;
+}
 
+
+/*
+ * Copyright
+ */
+
+.footer-copyright {
+    text-align: center;
+    padding: 16px 0px;
+}
+
+@media (max-width: 576px) {
+    .footer-content {
+        display: flex;
+        flex-direction: column;
     }
 
-    footer .container-fluid h3 {
-        font-size: 1.9rem;
+    .footer-block {
+        text-align: center;
+        margin: 10px 0px;
+        border-right: none;
+        padding: 20px 0px;
+        border-bottom: var(--border-primary);
+    }
 
-        width: 70%;
-        position: relative;
-        left: 15%;
-top: -10px;
-}
+    .footer-block:last-child {
+        border-right: 0;
+        border-bottom: 0;
+    }
+
+    .block-title {
+        padding-bottom: 10px;
+    }
+
+    .footer-link {
+        padding-bottom: 4px;
+    }
+
+    a:hover {
+        text-decoration: underline !important;
+    }
+
+    .footer-social-item li {
+        margin: 0 4px;
+    }
+
+    .footer-social-item li a {
+        display: block;
+        margin-left: 0px;
+    }
 }

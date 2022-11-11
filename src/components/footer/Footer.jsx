@@ -1,92 +1,176 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Container } from "react-bootstrap";
-
 import "./footer.css";
+import ass from "../../assets/img/logo.png";
 
 export const Footer = () => {
-  const infoLinks = [
-    { id: 0, name: "Contact Us", to: "/contact" },
-    { id: 1, name: "Sell With Us", to: "/sell" },
-    { id: 2, name: "Shipping", to: "/shipping" },
-  ];
-  const footerBusinessLinks = (
-    <ul className="support-links">
-      <li className="footer-link">
-        <Link to="/dashboard">Account Details</Link>
-      </li>
-      <li className="footer-link">
-        <Link to="/dashboard/orders">Orders</Link>
-      </li>
-    </ul>
-  );
-
-  const footerLinks = infoLinks.map((item) => (
-    <li key={item.id} className="footer-link">
-      <Link key={item.id} to={item.to}>
-        {item.name}
-      </Link>
-    </li>
-  ));
-
   return (
-    <footer className="footer">
-      <Container>
-        <div className="footer-content">
-          <div className="footer-block">
-            <div className="block-title">
-              <h3 className="text-uppercase">Customer Service</h3>
-            </div>
-            <div className="block-content">
-              <ul>{footerLinks}</ul>
+    <div>
+      <footer class="footer-section">
+        <div class="container">
+          <div class="footer-cta pt-5 pb-5">
+            <div class="row">
+              <div class="col-xl-4 col-md-4 mb-30">
+                <div class="single-cta">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div class="cta-text">
+                    <h4>Find us</h4>
+                    <span>123 Street, New York, USA</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-4 mb-30">
+                <div class="single-cta">
+                  <i class="fas fa-phone"></i>
+                  <div class="cta-text">
+                    <h4>Call us</h4>
+                    <span>+012 345 6789</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-4 mb-30">
+                <div class="single-cta">
+                  <i class="far fa-envelope-open"></i>
+                  <div class="cta-text">
+                    <h4>Mail us</h4>
+                    <span>cs@bishalmart.com</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="footer-block">
-            <div className="block-title">
-              <h3 className="text-uppercase">Links</h3>
-            </div>
-            <div className="block-content">
-              <ul>{footerLinks}</ul>
-            </div>
-          </div>
-          <div className="footer-block">
-            <div className="block-title">
-              <h3 className="text-uppercase">Newsletter</h3>
-              <footerBusinessLinks />
-              {/* <Newsletter /> */}
+          <div class="footer-content pt-5 pb-5">
+            <div class="row">
+              <div class="col-xl-4 col-lg-4 mb-50">
+                <div class="footer-widget">
+                  <div class="footer-logo">
+                    <a href="index.html">
+                      <img src={ass} class="img-fluid" alt="logo" />
+                    </a>
+                    <br />
+                    Bishalmart
+                  </div>
+                  <div class="footer-text">
+                    <p>
+                      Lorem ipsum dolor sit amet, consec tetur adipisicing elit,
+                      sed do eiusmod tempor incididuntut consec tetur
+                      adipisicing elit,Lorem ipsum dolor sit amet.
+                    </p>
+                  </div>
+                  <div class="footer-social-icon">
+                    <span>Follow us</span>
+                    <a href="#">
+                      <i class="fab fa-facebook-f facebook-bg"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fab fa-twitter twitter-bg"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fab fa-google-plus-g google-bg"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                <div class="footer-widget">
+                  <div class="footer-widget-heading">
+                    <h3>Useful Links</h3>
+                  </div>
+                  <ul>
+                    <li>
+                      <a href="#">Home</a>
+                    </li>
+                    <li>
+                      <a href="#">about</a>
+                    </li>
+                    <li>
+                      <a href="#">services</a>
+                    </li>
+                    <li>
+                      <a href="#">portfolio</a>
+                    </li>
+                    <li>
+                      <a href="#">Contact</a>
+                    </li>
+                    <li>
+                      <a href="#">About us</a>
+                    </li>
+                    <li>
+                      <a href="#">Our Services</a>
+                    </li>
+                    <li>
+                      <a href="#">Expert Team</a>
+                    </li>
+                    <li>
+                      <a href="#">Contact us</a>
+                    </li>
+                    <li>
+                      <a href="#">Latest News</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                <div class="footer-widget">
+                  <div class="footer-widget-heading">
+                    <h3>Subscribe</h3>
+                  </div>
+                  <div class="footer-text mb-25">
+                    <p>
+                      Don’t miss to subscribe to our new feeds, kindly fill the
+                      form below.
+                    </p>
+                  </div>
+                  <div class="subscribe-form">
+                    <form action="#">
+                      <input type="text" placeholder="Email Address" />
+                      <button>
+                        <i class="fab fa-telegram-plane"></i>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div className="footer-copyright">
-          <span>
-            {" "}
-            &copy;
-            {new Date().getFullYear()} E-shop Babbal
-          </span>
+        <div class="copyright-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                <div class="copyright-text">
+                  <p>
+                    Copyright &copy; {new Date().getFullYear()}{" "}
+                    <a href="https://github.com/bishalk21/fashiona-client-cms">
+                      Bishalmart
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                <div class="footer-menu">
+                  <ul>
+                    <li>
+                      <a href="#">Home</a>
+                    </li>
+                    <li>
+                      <a href="#">Terms</a>
+                    </li>
+                    <li>
+                      <a href="#">Privacy</a>
+                    </li>
+                    <li>
+                      <a href="#">Policy</a>
+                    </li>
+                    <li>
+                      <a href="#">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <ul className="footer-social-item">
-          <li>
-            <a href="/#facebook" rel="noreferrer noopener" target="_blank">
-              <i className="fab fa-facebook-f" />
-            </a>
-          </li>
-          <li>
-            <a href="/#instagram" rel="noreferrer noopener" target="_blank">
-              <i className="fab fa-instagram" />
-            </a>
-          </li>
-          <li>
-            <a href="/#pinterest" rel="noreferrer noopener" target="_blank">
-              <i className="fab fa-pinterest-p" />
-            </a>
-          </li>
-          <li>
-            <a href="/#twitter" rel="noreferrer noopener" target="_blank">
-              <i className="fab fa-twitter" />
-            </a>
-          </li>
-        </ul>
-      </Container>
-    </footer>
+      </footer>
+    </div>
   );
 };

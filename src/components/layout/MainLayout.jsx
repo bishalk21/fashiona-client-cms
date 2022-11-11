@@ -3,6 +3,7 @@ import { Footer } from "../footer/Footer";
 import { Header } from "../header/Header";
 
 import { SideMenu } from "../side-menu/SideMenu";
+import { ScrollToTop } from "./ScrollToTop";
 
 export const MainLayout = ({ children }) => {
   return (
@@ -11,8 +12,9 @@ export const MainLayout = ({ children }) => {
       <SideMenu />
       <main style={{ minHeight: "90vh" }} className="">
         {" "}
-        {children}{" "}
+        {children}
       </main>
+      <ScrollToTop />
       <Footer />
     </>
   );

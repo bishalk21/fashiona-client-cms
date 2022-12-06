@@ -10,10 +10,7 @@ export const MainLayout = ({ children }) => {
     <>
       <Header />
       <SideMenu />
-      <main style={{ minHeight: "90vh" }} className="">
-        {" "}
-        {children}
-      </main>
+      <main className="main"> {children}</main>
       <ScrollToTop />
       <Footer />
     </>

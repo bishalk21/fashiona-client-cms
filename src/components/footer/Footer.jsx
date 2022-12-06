@@ -58,13 +58,13 @@ export const Footer = () => {
                   </div>
                   <div class="footer-social-icon">
                     <span>Follow us</span>
-                    <a href="#">
+                    <a href="fa">
                       <i class="fab fa-facebook-f facebook-bg"></i>
                     </a>
-                    <a href="#">
+                    <a href="tw">
                       <i class="fab fa-twitter twitter-bg"></i>
                     </a>
-                    <a href="#">
+                    <a href="gg">
                       <i class="fab fa-google-plus-g google-bg"></i>
                     </a>
                   </div>
@@ -77,34 +77,34 @@ export const Footer = () => {
                   </div>
                   <ul>
                     <li>
-                      <a href="#">Home</a>
+                      <a href="/">Home</a>
                     </li>
                     <li>
-                      <a href="#">about</a>
+                      <a href="/about">about</a>
                     </li>
                     <li>
-                      <a href="#">services</a>
+                      <a href="/services">services</a>
                     </li>
                     <li>
-                      <a href="#">portfolio</a>
+                      <a href="/portfolio">portfolio</a>
                     </li>
                     <li>
-                      <a href="#">Contact</a>
+                      <a href="/contact">Contact</a>
                     </li>
                     <li>
-                      <a href="#">About us</a>
+                      <a href="/about">About us</a>
                     </li>
                     <li>
-                      <a href="#">Our Services</a>
+                      <a href="/services">Our Services</a>
                     </li>
                     <li>
-                      <a href="#">Expert Team</a>
+                      <a href="/expert">Expert Team</a>
                     </li>
                     <li>
-                      <a href="#">Contact us</a>
+                      <a href="/contact">Contact us</a>
                     </li>
                     <li>
-                      <a href="#">Latest News</a>
+                      <a href="/news">Latest News</a>
                     </li>
                   </ul>
                 </div>
@@ -150,19 +150,19 @@ export const Footer = () => {
                 <div class="footer-menu">
                   <ul>
                     <li>
-                      <a href="#">Home</a>
+                      <a href="/home">Home</a>
                     </li>
                     <li>
-                      <a href="#">Terms</a>
+                      <a href="terms">Terms</a>
                     </li>
                     <li>
-                      <a href="#">Privacy</a>
+                      <a href="/privacy">Privacy</a>
                     </li>
                     <li>
-                      <a href="#">Policy</a>
+                      <a href="/policy">Policy</a>
                     </li>
                     <li>
-                      <a href="#">Contact</a>
+                      <a href="/contact">Contact</a>
                     </li>
                   </ul>
                 </div>

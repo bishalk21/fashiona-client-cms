@@ -13,7 +13,12 @@ export const SideMenu = () => {
     <>
       <Offcanvas show={showSideMenu} onHide={handleClose}>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>E-shopBABBAL</Offcanvas.Title>
+          <Offcanvas.Title>
+            BishalMart
+            <small>
+              <i> - Your one stop shop</i>
+            </small>
+          </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
           Some text as placeholder. In real life you can have the elements you

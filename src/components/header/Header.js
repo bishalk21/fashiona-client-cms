@@ -58,7 +58,7 @@ export const Header = () => {
                   className="left-menu fa-solid fa-bars"
                   onClick={handleShow}
                 ></i>
-                <a href="index.html" title="Bishalmart" rel="home">
+                <a href="/" title="Bishalmart" rel="home">
                   Bishalmart
                 </a>
               </h1>
@@ -243,11 +243,11 @@ export const Header = () => {
             </li>
 
             {/* Furnitures */}
-            <li className="nav__group">
+            {/* <li className="nav__group">
               <a href="/" className="nav__group__link">
                 Furnitures
               </a>
-            </li>
+            </li> */}
 
             {/* Exercises/Fitness */}
             <li className="nav__group">
@@ -264,46 +264,46 @@ export const Header = () => {
             </li>
 
             {/* Pets */}
-            <li className="nav__group">
+            {/* <li className="nav__group">
               <a href="#product" className="nav__group__link">
                 Pets
               </a>
-            </li>
+            </li> */}
 
             {/* Offices */}
-            <li className="nav__group">
+            {/* <li className="nav__group">
               <a href="#product" className="nav__group__link">
                 Office Supplies
               </a>
-            </li>
+            </li> */}
 
             {/* Automotive */}
-            <li className="nav__group">
+            {/* <li className="nav__group">
               <a href="#product" className="nav__group__link">
                 Automotive Accessories
               </a>
-            </li>
+            </li> */}
 
             {/* Electronics */}
-            <li className="nav__group">
+            {/* <li className="nav__group">
               <a href="#product" className="nav__group__link">
                 Electronics
               </a>
-            </li>
+            </li> */}
 
             {/* Beverages */}
-            <li className="nav__group">
+            {/* <li className="nav__group">
               <a href="#product" className="nav__group__link">
                 Beverages
               </a>
-            </li>
+            </li> */}
 
             {/* Arts and Crafts */}
-            <li className="nav__group">
+            {/* <li className="nav__group">
               <a href="#product" className="nav__group__link">
                 Arts & Crafts
               </a>
-            </li>
+            </li> */}
 
             {/* Toys and Games */}
             <li className="nav__group">
@@ -313,11 +313,11 @@ export const Header = () => {
             </li>
 
             {/* Medicines */}
-            <li className="nav__group">
+            {/* <li className="nav__group">
               <a href="#product" className="nav__group__link">
                 Medicines
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </nav>

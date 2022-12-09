@@ -62,3 +62,17 @@ export const requestAccessJWT = async () => {
   sessionStorage.setItem("accessJWT", accessJWT);
   return accessJWT;
 };
+
+// ================= Categories ==============
+//to get all the categories from the external api
+export const getAllCategories = () => {
+  const url = categoriesAPI;
+  return apiProcessor({ method: "get", url });
+};
+
+// ================ Product ================
+//to get all the products from the external api
+export const getAllProducts = () => {
+  const url = productsAPI;
+  return apiProcessor({ method: "get", url });
+};

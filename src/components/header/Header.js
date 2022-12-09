@@ -97,7 +97,7 @@ export const Header = () => {
               </div>
             </a>
             {/* RIGHT END CART */}
-            <a href="#cart" className="item">
+            <a href="/cart" className="item">
               <div className="group">
                 <i className="fa-solid fa-shopping-cart"></i>
                 <div className="detail">
@@ -117,128 +117,14 @@ export const Header = () => {
             {/* Clothing */}
             <li className="nav__group">
               <a href="#clothings" className="nav__group__link">
-                Clothings
+                MENS
               </a>
-              <ul className="nav__group__dropdown">
-                <div className="multi-column">
-                  <ul className="product-list" data-type="floor">
-                    <li className="product-list__title title">Floor Covers</li>
-                    <li className="product-list__link">
-                      <a href="/">Area rugs</a>
-                    </li>
-                    <li className="product-list__link">
-                      <a href="/">Door mats</a>
-                    </li>
-                    <li className="product-list__link">
-                      <a href="/">Hallway runners</a>
-                    </li>
-                    <li className="product-list__link">
-                      <a href="/">Fake grass</a>
-                    </li>
-                  </ul>
-                  <ul className="product-list" data-type="wall">
-                    <li className="product-list__title title">Wall Covers</li>
-                    <li className="product-list__link">
-                      <a href="/">Wall art</a>
-                    </li>
-                    <li className="product-list__link">
-                      <a href="/">#basic quotes</a>
-                    </li>
-                    <li className="product-list__link">
-                      <a href="/">Nature wallpapers</a>
-                    </li>
-                    <li className="product-list__link">
-                      <a href="/">Memo boards</a>
-                    </li>
-                    <li className="product-list__link">
-                      <a href="/">Chalk boards</a>
-                    </li>
-                  </ul>
-                  <ul className="product-list" data-type="window">
-                    <li className="product-list__title title">Window Capes</li>
-                    <li className="product-list__link">
-                      <a href="/">Curtains</a>
-                    </li>
-                    <li className="product-list__link">
-                      <a href="/">Tapestries</a>
-                    </li>
-                    <li className="product-list__link">
-                      <a href="/">Hanging flowers</a>
-                    </li>
-                    <li className="product-list__link">
-                      <a href="/">Herb gardens</a>
-                    </li>
-                  </ul>
-                  <ul className="product-list" data-type="cool">
-                    <li className="product-list__title title">
-                      It Just Looks Cool
-                    </li>
-                    <li className="product-list__link">
-                      <a href="/">Teepees</a>
-                    </li>
-                    <li className="product-list__link">
-                      <a href="/">Faerie lights</a>
-                    </li>
-                    <li className="product-list__link">
-                      <a href="/">Easels</a>
-                    </li>
-                    <li className="product-list__link">
-                      <a href="/">Vintage bicycles</a>
-                    </li>
-                  </ul>
-                  <ul className="article-list">
-                    <li className="article-list__title title">
-                      For Your Inspiration
-                    </li>
-                    <li className="article-list__link">
-                      <a href="/">
-                        Do the Eat, Pray, Love: Fake Grass For Your Office
-                      </a>
-                    </li>
-                    <li className="article-list__link">
-                      <a href="/">
-                        Do You Really Work Better When You're Stepping On A
-                        White, Fluffy Rug?
-                      </a>
-                    </li>
-                    <li className="article-list__link">
-                      <a href="/">
-                        Yoga Mats: An Exercise Tool and An Office Rug? Win!
-                      </a>
-                    </li>
-                  </ul>
-                  <img
-                    alt=""
-                    className="product-image"
-                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/nav-floor.jpg"
-                    data-match="floor"
-                  />
-                  <img
-                    alt=""
-                    className="product-image"
-                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/nav-wall.jpg"
-                    data-match="wall"
-                  />
-                  <img
-                    alt=""
-                    className="product-image"
-                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/nav-window.jpg"
-                    data-match="window"
-                  />
-                  <img
-                    alt=""
-                    className="product-image"
-                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/nav-cool.jpg"
-                    data-match="cool"
-                  />
-                </div>
-              </ul>
             </li>
 
             {/* Cosmetics */}
             <li className="nav__group">
               <a href="/" className="nav__group__link">
-                Cosmetics
+                WOMENS
               </a>
             </li>
 
@@ -252,14 +138,14 @@ export const Header = () => {
             {/* Exercises/Fitness */}
             <li className="nav__group">
               <a href="/" className="nav__group__link">
-                Fitness Health
+                KIDS
               </a>
             </li>
 
             {/* Books */}
             <li className="nav__group">
               <a href="/" className="nav__group__link">
-                Books Library
+                COSMETICS
               </a>
             </li>
 
@@ -308,7 +194,7 @@ export const Header = () => {
             {/* Toys and Games */}
             <li className="nav__group">
               <a href="#product" className="nav__group__link">
-                Toys & Games
+                SALE
               </a>
             </li>
 

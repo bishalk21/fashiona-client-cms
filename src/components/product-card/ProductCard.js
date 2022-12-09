@@ -1,6 +1,8 @@
 import React from "react";
 import "./productCard.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { addToCart } from "../../pages/cart-page/cartSlice";
+import { useDispatch } from "react-redux";
 
 export const ProductCard = ({
   _id,
@@ -14,6 +16,14 @@ export const ProductCard = ({
   subCatName,
   categories,
 }) => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const handleAddToCart = (product) => {
+    dispatch(addToCart(product));
+    navigate("/cart");
+  };
+
   const findCategories = (catId) => {
     const item = categories.find((product) => product._id === catId);
     return item.catName;
@@ -78,8 +88,7 @@ export const ProductCard = ({
             </Link>
           </div>
           <div className="shop-now-button">
-            {/* onClick={() => handleAddToCart(product)} */}
-            <button>
+            <button onClick={() => handleAddToCart(product)}>
               <i className="fa-solid fa-cart-shopping"></i>
             </button>
           </div>

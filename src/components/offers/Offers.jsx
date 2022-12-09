@@ -8,9 +8,6 @@ export const OfferComponent = () => {
       <h2>Our services</h2>
       <div className="offer-card-section">
         <OfferCard />
-        <OfferCard />
-        <OfferCard />
-        <OfferCard />
       </div>
     </div>
   );

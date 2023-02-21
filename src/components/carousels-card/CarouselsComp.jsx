@@ -12,7 +12,7 @@ export const CarouselComponent = () => {
             src="https://images.unsplash.com/photo-1505022610485-0249ba5b3675?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
             className="d-block w-100"
             alt="First slide"
-            maxheight="600px"
+            maxheight="350px"
           />
           <Carousel.Caption className="d-flex justify-content-center">
             <div className="carousel-button">Shop Now</div>
@@ -23,7 +23,7 @@ export const CarouselComponent = () => {
             className="d-block w-100"
             src="https://images.unsplash.com/photo-1612731486606-2614b4d74921?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1720&q=80"
             alt="Second slide"
-            maxheight="700px"
+            maxheight="50px"
           />
           <Carousel.Caption className="d-flex justify-content-center">
             <div className="carousel-button">Shop Now</div>

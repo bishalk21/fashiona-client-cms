@@ -49,11 +49,11 @@ export const ProductCard = ({
             style={{ textDecoration: "none", color: "white" }}
           >
             <div className="product--image">
-              <img
+              {/* <img
                 src={`${process.env.REACT_APP_IMAGE_URL + images[0].slice(6)}`}
                 // src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
                 alt="product"
-              />
+              /> */}
             </div>{" "}
           </Link>
 

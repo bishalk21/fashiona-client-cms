@@ -6,6 +6,7 @@ import { ProductCard } from "../product-card/ProductCard";
 
 export const SpecialItemComponent = () => {
   const { products } = useSelector((state) => state.product);
+  console.log(products);
   const { categories } = useSelector((state) => state.category);
 
   return (

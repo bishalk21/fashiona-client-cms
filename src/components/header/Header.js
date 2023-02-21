@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import "./header.css";
 import { useDispatch } from "react-redux";
 import { Col, Container, Navbar, Row } from "react-bootstrap";
 import { setShowSideMenu } from "../../pages/system-state/systemSlice";
 
 export const Header = () => {
+  const [itemList, setItemList] = useState("");
   const dispatch = useDispatch();
   const handleShow = () => dispatch(setShowSideMenu(true));
+
+  const handleOnSearch = (e) => {
+    const { value } = e.target;
+    console.log(value);
+    setItemList(value);
+  };
 
   return (
     // header
@@ -59,7 +66,7 @@ export const Header = () => {
                   onClick={handleShow}
                 ></i>
                 <a href="/" title="Bishalmart" rel="home">
-                  Bishalmart
+                  Fewa-Store
                 </a>
               </h1>
               <div className="site-description">Online Shopping</div>
@@ -80,9 +87,13 @@ export const Header = () => {
                   <option value="all">KIDS</option>
                   <option value="all">SEASONAL</option>
                 </select>
-                <input type="text" placeholder="Search" />
+                <input
+                  type="text"
+                  placeholder="Search"
+                  onChange={handleOnSearch}
+                />
                 {/* search icon */}
-                <i className="fa-solid fa-search"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
               </div>
             </div>
 

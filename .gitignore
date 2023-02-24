@@ -4,14 +4,14 @@
 /node_modules
 /.pnp
 .pnp.js
-.env
-carouselsy
 
 # testing
 /coverage
 
 # production
 /build
+# environment variables
+.env
 
 # misc
 .DS_Store

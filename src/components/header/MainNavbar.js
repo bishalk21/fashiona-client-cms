@@ -12,7 +12,7 @@ const MainNavbar = () => {
     <>
       {/* ========== navbar ========== */}
       <Navbar className="navbar" expand="lg">
-        <div className="container">
+        <div className="container d-flex justify-content-between">
           {/* LOGO */}
           <div className="logo">
             {/* <img
@@ -21,7 +21,7 @@ const MainNavbar = () => {
             <div className="text title">
               <h1 className="site-title">
                 <i
-                  className="left-menu fa-solid fa-bars"
+                  className="left-menu bars-icon fa-solid fa-bars"
                   onClick={handleShow}
                 ></i>
                 <a href="/" title="Bishalmart" rel="home">
@@ -37,7 +37,7 @@ const MainNavbar = () => {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             {/* SEARCH MID */}
-            <div className="item search right" tabIndex="0">
+            <div className="item right" tabIndex="0">
               <div className="search-group">
                 <select>
                   <option value="all">All</option>
@@ -52,30 +52,43 @@ const MainNavbar = () => {
                   onChange={handleOnSearch}
                 />
                 {/* search icon */}
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
               </div>
             </div>
 
-            {/* RIGHT END Account */}
-            <a href="#account" className="item">
-              <div className="group">
-                <i className="fa-solid fa-user"></i>
-                <div className="detail">
-                  Account
-                  <div className="sub">Sign In</div>
+            <div className="d-flex">
+              {/* RIGHT END Account */}
+              <a href="#account" className="item">
+                <div className="group">
+                  <i className="fa-solid fa-user"></i>
+                  <div className="detail">
+                    Account
+                    <div className="sub">Sign In</div>
+                  </div>
                 </div>
-              </div>
-            </a>
-            {/* RIGHT END CART */}
-            <a href="/cart" className="item">
-              <div className="group">
-                <i className="fa-solid fa-shopping-cart"></i>
-                <div className="detail">
-                  Cart
-                  <div className="sub">0 items</div>
+              </a>
+              {/* RIGHT END CART */}
+              <a href="/cart" className="item">
+                <div className="group">
+                  <i className="fa-solid fa-shopping-cart"></i>
+                  <div className="detail">
+                    Cart
+                    <div className="sub">0 items</div>
+                  </div>
                 </div>
-              </div>
-            </a>
+              </a>
+
+              {/* RIGHT FAVORITES */}
+              <a href="/myfavourites" className="item">
+                <div className="group">
+                  <i class="fa-solid fa-heart"></i>
+                  <div className="detail">
+                    My Favourites
+                    <div className="sub">0 items</div>
+                  </div>
+                </div>
+              </a>
+            </div>
           </Navbar.Collapse>
         </div>
       </Navbar>

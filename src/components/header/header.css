@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+/* ========== allHeader ================== */
+.header {
+  color: var(--theme-color);
+  background-color: var(--theme-light-black);
+}
+
+/* =========== Special Header ============ */
+.special-head {
+  background-color: var(--theme-light-black);
+  color: var(--theme-color);
+  padding: 4px 0px;
+  position: sticky;
+  width: 100%;
+}
+
+/* =============== MainNavbar ============ */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 2px 0 rgb(255, 255, 255);
+  background: var(--theme-light-blue-white);
+  color: var(--theme-black);
+  position: sticky;
+}
+
+.item {
+  padding: 4px;
+  text-decoration: none;
+  color: var(--theme-light-black);
+}

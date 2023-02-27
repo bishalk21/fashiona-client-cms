@@ -1,3 +1,110 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind variants; */
+
+:root {
+  /* standard colors */
+  --blue: #20a8d8;
+  --indigo: #6610f2 default;
+
+  --purple: #6f42c1 default;
+  --pink: #e83e8c default;
+  --red: #ff5454;
+  --white: #fff;
+  --orange: #fabb3d;
+  --yellow: #ffc107 default;
+  --green: #79c447;
+  --gray: #808081;
+  --teal: #20c997 default;
+  --cyan: #67c2ef;
+  --black: #000;
+
+  --theme-color: white;
+  --theme-light-black: #24292e;
+  --theme-light-blue-white: #e8f0fe;
+  --theme-black: #323232;
+  --theme-light-black: #24292e;
+  --theme-bright-gray: #eceef3;
+  --theme-dark-gray: #cccccc;
+  --theme-blue: #2979ff;
+  --theme-purple: #727cb6;
+  --theme-white: #f6f7f8;
+
+  --font-family-poppins: "Poppins";
+  --font-family-open-sans: "Open Sans";
+  --font-size-x-small: 12px;
+  --font-size-small: 13px;
+  --font-size-medium: 14px;
+  --font-size-large: 15px;
+  --font-size-huge: 20px;
+  --font-size-x-huge: 24px;
+
+  --font-weight-thin: 200;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+
+  /* layout variables */
+  --btn-bg: var(--white);
+  --btn-bg-hover: var(--primary-bg);
+  --font-color: #65676b;
+  --font-light-color: #00000026;
+  --font-custom-color: var(--theme-black);
+  --font-subtext-color: var(--gray);
+  --font-custom-hover-color: var(--theme-blue);
+  --font-hover-color: var(--black);
+  --font-focus-color: var(--black);
+  --font-heading-color: #262626;
+  --border-color-default: #e4e6eb;
+  --border-color-primary: var(--theme-bright-gray);
+  --border-hover-color: #ced9de;
+  --border-focus-color: #bdcbd2;
+  --dark-overflow-bg: #0006;
+  --transparent-bg: #3232321f;
+  --transparent-gray-bg: #f1f3f4f5;
+  --transparent-white-bg: #f1f1f170;
+  --hover-bg: #e3e8ea;
+  --badge: var(--red);
+  --stars: #adb5bd;
+  --stars-active: #ffb302;
+  --disabled-bg: #d9dbdea1;
+
+  --outline-color: #7aacfe;
+  --validation-color: #dc3545;
+  --outline-box-shadow: 0 0 0 3px #159ce466;
+  --box-shadow: 0 0 10px 0 #e6e5ea;
+  --box-shadow-primary: 0 1px 2px #00000033;
+  --box-shadow-secondary: 0 0 2px #00000033;
+  --border-radius-default: 3px;
+  --border-radius-primary: 5px;
+  --border-radius-circle: 50px;
+  --line-height: 1.5;
+  --letter-spacing: 0.5px;
+  --border-default: 1px solid var(--border-color-default);
+  --border-primary: 1px solid var(--border-color-primary);
+}
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.fa,
+span {
+  font-size: var(--font-size-large) !important;
+  font-weight: var(--font-weight-medium);
+  margin: 0px 5px;
+}

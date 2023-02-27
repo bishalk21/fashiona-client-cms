@@ -1,10 +1,6 @@
 import "./app.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import LandingPage from "./pages/landing-page/LandingPage";
-import Header from "./components/header/Header";
-import Footer from "./components/footer/Footer";
-import Body from "./components/body/Body";
-import { SideMenu } from "./components/header/side-menu/SideMenu";
 
 // 1. header
 //    - specials small head - comp
@@ -27,27 +23,15 @@ import { SideMenu } from "./components/header/side-menu/SideMenu";
 //    - newsletter - comp
 //    - footer - comp
 
-const appRouter = createBrowserRouter([
-  {
-    path: "/",
-    element: <Body />,
-    children: [
-      {
-        path: "/",
-        element: <LandingPage />,
-      },
-    ],
-  },
-]);
-
 function App() {
   return (
-    <>
-      <Header />
-      <SideMenu />
-      <RouterProvider router={appRouter} />
-      <Footer />
-    </>
+    <div className="App">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 

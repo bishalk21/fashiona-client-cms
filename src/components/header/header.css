@@ -1,16 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
+/* .btn-close {
+  position: absolute;
+} */
+
 /* ========== allHeader ================== */
 .header {
   color: var(--theme-color);
   background-color: var(--theme-light-black);
   /* background-color: var(--white); */
   border-bottom: var(--border-primary);
-  position: fixed;
+  /* position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 998;
+  z-index: 998; */
   /* padding: 22px ​0px; */
 }
 
@@ -114,8 +118,8 @@
   clear: both;
   color: #222;
   font-family: "Roboto", sans-serif;
-  font-size: 0.8rem;
-  font-weight: 400;
+  font-size: 0.7rem;
+  font-weight: 380;
   letter-spacing: 0.1em;
   line-height: 1rem;
   margin: 0;
@@ -130,10 +134,17 @@
 
 /* Search box */
 .item {
+  margin: 5px 5px 0px 5px;
   transition: 0.2s linear;
   display: flex;
+  align-items: center;
   justify-content: center;
   flex-grow: 1;
+  flex-direction: column;
+}
+
+.right {
+  min-width: 300px;
 }
 
 .item .search-group {
@@ -156,6 +167,7 @@
   max-width: 4em;
   outline: none;
   color: grey;
+  cursor: pointer;
 }
 
 .item .search-group input {
@@ -167,7 +179,7 @@
   border: 0;
 }
 
-.item .search-group > i {
+.item .search-group > button > i {
   border-left: 1px solid grey;
   margin: 2px;
   padding-left: 10px;
@@ -185,4 +197,32 @@
 
 .item .group .sub {
   font-size: 0.8em;
+}
+
+.select-cat {
+  width: 100%;
+}
+
+.special-cat {
+  margin-top: 4px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 0;
+}
+
+.special-cat > li {
+  list-style: none;
+  cursor: pointer;
+  padding: 0px 9px;
+  border-right: 1px solid grey;
+  font-weight: 400;
+  font-size: small;
+}
+
+.special-cat > li:last-child {
+  border-right: none;
 }

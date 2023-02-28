@@ -24,7 +24,6 @@
   --theme-light-black: #24292e;
   --theme-light-blue-white: #e8f0fe;
   --theme-black: #323232;
-  --theme-light-black: #24292e;
   --theme-bright-gray: #eceef3;
   --theme-dark-gray: #cccccc;
   --theme-blue: #2979ff;
@@ -91,6 +90,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -112,4 +112,9 @@ span {
   font-size: var(--font-size-large) !important;
   font-weight: var(--font-weight-medium);
   margin: 0px 5px;
+}
+
+.main {
+  position: relative;
+  min-height: 100vh;
 }

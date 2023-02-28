@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar } from "react-bootstrap";
+import { Button, Navbar } from "react-bootstrap";
 import { useDispatch } from "react-redux";
 import { setShowSideMenu } from "../../utils/system-state/systemSlice";
 
@@ -11,7 +11,7 @@ const MainNavbar = () => {
   return (
     <>
       {/* ========== navbar ========== */}
-      <Navbar className="navbar" expand="lg">
+      <Navbar className="navbar py-2" expand="lg">
         <div className="container d-flex justify-content-between">
           {/* LOGO */}
           <div className="logo">
@@ -25,7 +25,7 @@ const MainNavbar = () => {
                   onClick={handleShow}
                 ></i>
                 <a href="/" title="Bishalmart" rel="home">
-                  Fewa-Store
+                  Fewa Store
                 </a>
               </h1>
               <div className="site-description">Online Shopping</div>
@@ -37,7 +37,7 @@ const MainNavbar = () => {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             {/* SEARCH MID */}
-            <div className="item right" tabIndex="0">
+            <div className="item right d-flex">
               <div className="search-group">
                 <select>
                   <option value="all">All</option>
@@ -52,7 +52,19 @@ const MainNavbar = () => {
                   onChange={handleOnSearch}
                 />
                 {/* search icon */}
-                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <Button variant="none">
+                  <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                </Button>
+              </div>
+              <div className="select-cat">
+                <ul className="special-cat">
+                  <li>clothes</li>
+                  <li>fashion</li>
+                  <li>hub</li>
+                  <li>shirt</li>
+                  <li>sports</li>
+                  <li>sweater</li>
+                </ul>
               </div>
             </div>
 
@@ -62,8 +74,8 @@ const MainNavbar = () => {
                 <div className="group">
                   <i className="fa-solid fa-user"></i>
                   <div className="detail">
-                    Account
-                    <div className="sub">Sign In</div>
+                    Hello!
+                    <div className="sub">My Account</div>
                   </div>
                 </div>
               </a>

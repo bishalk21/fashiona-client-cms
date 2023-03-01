@@ -36,7 +36,8 @@
   padding-top: 0;
   padding-bottom: 0.5rem;
   box-shadow: 0 0 2px 0 rgb(255, 255, 255);
-  background: var(--theme-light-blue-white);
+  /* background: var(--theme-light-blue-white); */
+  background: var(--blue);
   color: var(--theme-black);
   position: sticky;
 }

@@ -1,0 +1,90 @@
+.main-lp {
+  background: var(--theme-bright-gray);
+}
+.lp {
+  padding: 5px;
+  width: 100%;
+  color: var(--theme-black);
+  border-bottom: 0.1px solid var(--theme-dark-gray);
+}
+
+.landing-page {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2px;
+  border-radius: 50px;
+  flex-wrap: none;
+}
+
+.form-select {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.home-page {
+  font-weight: bold;
+  color: var(--blue);
+}
+
+.more-select {
+  background: var(--theme-bright-gray);
+}
+
+ul > li {
+  list-style: none;
+}
+
+.others-curr-lang {
+  font-size: small;
+  border-left: 1px solid gray;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.become-a-seller > span {
+  color: var(--red);
+  width: 80%;
+  display: inline;
+  padding: 2px;
+}
+
+.landing-product {
+  height: 100%;
+  min-height: 40vh;
+  padding: 2px;
+}
+
+.flash-deal-product {
+  height: 100%;
+  /* background: var(--theme-dark-gray); */
+}
+
+.flash-deal-product > img {
+  width: 100%;
+  /* backdrop-filter: blur(10px); */
+  box-shadow: 0 0 8px 8px white inset;
+}
+
+.offer-ends-in {
+  background-color: var(--theme-dark-gray);
+  border-radius: 15px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .actual-price {
+    font-size: 14px;
+  }
+  .discounted-price {
+    font-size: 15px;
+  }
+
+  .offer-ends-in {
+    font-size: x-small;
+  }
+}

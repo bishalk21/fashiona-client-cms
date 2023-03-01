@@ -22,7 +22,7 @@
 
   --theme-color: white;
   --theme-light-black: #24292e;
-  --theme-light-blue-white: #e8f0fe;
+  --theme-light-blue-white: #d1def6;
   --theme-black: #323232;
   --theme-bright-gray: #eceef3;
   --theme-dark-gray: #cccccc;
@@ -107,12 +107,12 @@ span {
   transform: translateY(0);
 }
 
-.fa,
+/* .fa,
 span {
-  font-size: var(--font-size-large) !important;
+  font-size: var(--font-size-large);
   font-weight: var(--font-weight-medium);
   margin: 0px 5px;
-}
+} */
 
 .main {
   position: relative;

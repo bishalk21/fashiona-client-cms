@@ -1,0 +1,10 @@
+.starting-from-product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.starting-from > img {
+  width: 100%;
+  /* object-fit: cover; */
+}

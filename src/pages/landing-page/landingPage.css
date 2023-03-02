@@ -80,8 +80,9 @@ ul > li {
 }
 
 .flash-deals {
-  position: relative;
-  top: -5px;
+  position: absolute;
+  /* top: -5px;  */
+  text-align: center;
 }
 
 .discount-percent {

@@ -1,6 +1,8 @@
 import React from "react";
 import { Container, Form } from "react-bootstrap";
 import LandingPageFeatures from "../../components/features/landing-page-features/LandingPageFeatures";
+import MostViewedProduct from "../../components/product/most-viewed/MostViewedProduct";
+import StartingFromProduct from "../../components/product/starting-from-product/StartingFromProduct";
 import LandingProduct from "../../components/special-product/landing-page-products/LandingProduct";
 import "./landingPage.css";
 
@@ -94,6 +96,8 @@ const LandingPage = () => {
       </div>
       <LandingProduct />
       <LandingPageFeatures />
+      <MostViewedProduct />
+      <StartingFromProduct />
     </div>
   );
 };

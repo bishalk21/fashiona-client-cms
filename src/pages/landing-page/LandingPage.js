@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Form } from "react-bootstrap";
 import TopCategories from "../../components/categories/top-categories/TopCategories";
 import LandingPageFeatures from "../../components/features/landing-page-features/LandingPageFeatures";
+import BestSeller from "../../components/product/best-sellers/BestSeller";
 import MostViewedProduct from "../../components/product/most-viewed/MostViewedProduct";
 import StartingFromProduct from "../../components/product/starting-from-product/StartingFromProduct";
 import LandingProduct from "../../components/special-product/landing-page-products/LandingProduct";
@@ -100,6 +101,7 @@ const LandingPage = () => {
       <MostViewedProduct />
       <StartingFromProduct />
       <TopCategories />
+      <BestSeller />
     </div>
   );
 };

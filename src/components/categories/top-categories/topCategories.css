@@ -1,19 +1,23 @@
 .top-category {
   padding: 8px;
-  height: 20vh;
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
 }
 
 .top-category-list {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .top-category-list > li > i {
   background-color: rgba(128, 128, 128, 0.402);
   border-radius: 50%;
-  height: 120px;
-  width: 120px;
+  min-height: 120px;
+  min-width: 120px;
   text-align: center;
   display: flex;
   align-items: center;
